@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View10"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <VBox class="sapUiSmallMargin" width="20rem" >
+        <Title text="Static Dropdown (select)" class="sapUiSmallMarginBottom" />
+
+        <Select 
+            id="staticSelect"
+            change="onSelectionChange">
+
+            <items>
+                <core:Item key="1" text="Option 1" />
+                <core:Item key="2" text="Option 2" />
+                <core:Item key="3" text="Option 3" />
+            </items>
+
+        </Select>
+        
+
+        
+
+        <Button 
+            text="Validate"
+            type="Emphasized"
+            press="onValidate"
+        />
+    </VBox>
+</mvc:View>
