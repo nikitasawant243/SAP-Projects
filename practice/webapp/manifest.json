@@ -74,22 +74,22 @@
       },
       "routes": [
         {
-          "name": "RouteView15",
+          "name": "RouteView17",
           "pattern": ":?query:",
           "target": [
-            "TargetView15"
+            "TargetView17"
           ]
         }
       ],
       "targets": {
         "TargetView1": {
-          "id": "View15",
-          "name": "View15"
+          "id": "View17",
+          "name": "View17"
         }
       }
     },
     "rootView": {
-      "viewName": "demo.practice.practice.view.View15",
+      "viewName": "demo.practice.practice.view.View17",
       "type": "XML",
       "id": "App",
       "async": true
