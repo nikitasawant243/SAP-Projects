@@ -1,0 +1,21 @@
+{
+  "sap.app": {
+    "id": "demo.test.testing",
+    "type": "application",
+    "title": "Demo App"
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    },
+    "rootView": {
+      "viewName": "demo.test.testing.view.View1",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    }
+  }
+}
