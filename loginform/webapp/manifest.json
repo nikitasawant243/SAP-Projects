@@ -1,0 +1,24 @@
+{
+  "sap.app": {
+    "id": "demo.loginfrom.loginform",
+    "type": "application",
+    "title": "Login App"
+  },
+  "sap.ui": {
+    "technology": "UI5"
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "demo.loginfrom.loginform.view.Login",
+      "type": "XML",
+      "async": true,
+      "id": "login"
+    },
+    "dependencies": {
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    }
+  }
+}

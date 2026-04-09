@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="demo.loginfrom.loginform.controller.Login"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox class="sapUiSmallMargin" width="20rem">
+
+        <Title text="Login Form" />
+
+        <Input 
+            id="username"
+            placeholder="Enter Username"
+            liveChange="onUsernameChange" />
+
+        <Input 
+            id="password"
+            type="Password"
+            placeholder="Enter Password"
+            liveChange="onPasswordChange"
+            showValueHelp="true"
+            valueHelpIconSrc="sap-icon://show"
+            valueHelpRequest="onTogglePassword" />
+
+        <HBox class="sapUiSmallMarginTop">
+            <Button text="Submit" press="onSubmit" type="Emphasized"/>
+            <Button text="Cancel" press="onCancel"/>
+        </HBox>
+
+    </VBox>
+
+</mvc:View>
