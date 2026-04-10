@@ -1,0 +1,52 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View20"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <App id="myApp">
+
+        <!-- 🔹 Page 1 (Tiles Page) -->
+        <Page id="page1" title="Dashboard Tiles">
+            <content>
+                <VBox class="sapUiSmallMargin">
+
+                    <HBox wrap="Wrap" justifyContent="Center"
+                          items="{/tiles}">
+
+                        <GenericTile 
+                            header="{title}"
+                            subheader="{subtitle}"
+                            press="onTilePress"
+                            class="sapUiSmallMargin">
+
+                            <tileContent>
+                                <TileContent>
+                                    <content>
+                                        <NumericContent 
+                                            value="{value}"
+                                            valueColor="Good" />
+                                    </content>
+                                </TileContent>
+                            </tileContent>
+
+                        </GenericTile>
+
+                    </HBox>
+
+                </VBox>
+            </content>
+        </Page>
+
+        <!-- 🔹 Page 2 (Detail Page) -->
+        <Page id="page2" title="Details Page">
+            <content>
+                <VBox class="sapUiSmallMargin" alignItems="Center">
+                    <Text id="detailText" text="Tile Clicked" />
+                    <Button text="Back" press="onBack"/>
+                </VBox>
+            </content>
+        </Page>
+
+    </App>
+
+</mvc:View>

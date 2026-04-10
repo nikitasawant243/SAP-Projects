@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View21"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:unified="sap.ui.unified">
+
+
+    <App>
+    <Page title="File Upload">
+        <content>
+            <VBox class="sapUiSmallMargin">
+
+               <!-- File uplaod control -->
+               <unified:FileUploader 
+                id="fileUploader"
+                width="300px"
+                placeholder="Choose a file"
+                change="onFileChange"/>
+
+
+            <!-- Uplaod Button -->
+            <Button 
+                text="Upload"
+                press="onUpload"/>
+
+            </VBox>
+        </content>
+    </Page>
+    </App>
+
+</mvc:View>
