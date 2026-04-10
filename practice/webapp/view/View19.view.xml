@@ -3,6 +3,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
 
+    <App>
     <Page title="Search Bar Filter Table">
         <content>
             <VBox class="sapUiSmallMargin">
@@ -46,5 +47,6 @@
             </VBox>
         </content>
     </Page>
+    </App>
 
 </mvc:View>

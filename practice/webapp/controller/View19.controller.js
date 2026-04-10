@@ -6,7 +6,7 @@ sap.ui.define([
 ], function (Controller, JSONModel, Filter, FilterOperator) {
     "use strict";
 
-    return Controller.extend("demo.practice.practice.View19", {
+    return Controller.extend("demo.practice.practice.controller.View19", {
 
         // 🔹 Initialize data
         onInit: function () {
