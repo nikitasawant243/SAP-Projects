@@ -6,8 +6,9 @@ sap.ui.define([
 ], function (Controller, JSONModel, Filter, FilterOperator) {
     "use strict";
 
-    return Controller.extend("demo.controller.View1", {
+    return Controller.extend("demo.practice.practice.View19", {
 
+        // 🔹 Initialize data
         onInit: function () {
 
             var oData = {
@@ -22,27 +23,26 @@ sap.ui.define([
 
             var oModel = new JSONModel(oData);
             this.getView().setModel(oModel);
-
         },
 
+        // 🔹 Search filter logic
         onSearch: function (oEvent) {
 
             var sValue = oEvent.getParameter("newValue");
-            var oTable = this.getView().byId("idTable");
+            var oTable = this.byId("idTable");
             var oBinding = oTable.getBinding("items");
 
             var aFilters = [];
 
             if (sValue) {
-                aFilters.push(
-                    new Filter({
-                        filters: [
-                            new Filter("name", FilterOperator.Contains, sValue),
-                            new Filter("city", FilterOperator.Contains, sValue)
-                        ],
-                        and: false
-                    })
-                );
+
+                var oFilter1 = new Filter("name", FilterOperator.Contains, sValue);
+                var oFilter2 = new Filter("city", FilterOperator.Contains, sValue);
+
+                aFilters.push(new Filter({
+                    filters: [oFilter1, oFilter2],
+                    and: false   // OR condition
+                }));
             }
 
             oBinding.filter(aFilters);
